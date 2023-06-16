@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewpart" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+         />
+        <title>Movie App</title>
+    </head>
+    <header>
+        <div class="box">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" id="search"placeholder="Search something here..." class="search" style="width: 100%" />
+
+        </div>
+    </header>
+    <body>
+        <h2>My Collection</h2>
+        <h4>Favorite movies</h4>
+        <div class="custom-select" style="width:200px;">
+            <select>
+              <option value="0">Movie Genre</option>
+              <option value="1">Hollywood Movies</option>
+              <option value="2">Drama Movies</option>
+              <option value="3">Action Movies</option>
+              <option value="4">Comedy Movies</option>
+            </select>
+        </div>
+        <button id="btn" onclick="add()">Add New Movies</button>
+        <div id="movies">
+          <div class="movie">
+                <img src="https://render.fineartamerica.com/images/rendered/medium/canvas-print/15.5/20/mirror/break/images/artworkimages/medium/2/floral-lion-iii-balazs-solti-canvas-print.jpg" alt="">
+                <p>year</p>
+                <p></p>
+                <h2 class="title">title</h2>
+            </div>
+            
+            <div id="movies">
+                <div class="movie">
+                    <img src="https://render.fineartamerica.com/images/rendered/medium/canvas-print/15.5/20/mirror/break/images/artworkimages/medium/2/floral-lion-iii-balazs-solti-canvas-print.jpg" alt="">
+                    <p>year</p>
+                    <p></p>
+                    <h2 class="title">title</h2>
+                </div>
+        </div>
+        <main id="main">
+
+        </main>
+    </body>
+    <script src="index.js"></script>
+</html>
