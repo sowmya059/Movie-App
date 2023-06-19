@@ -1,53 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewpart" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css">
-        <link
+  <head>
+    <meta name="viewpart" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-         />
-        <title>Movie App</title>
-    </head>
-    <header>
-        <div class="box">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <input type="text" id="search"placeholder="Search something here..." class="search" style="width: 100%" />
+    />
+    <title>Movie App</title>
+  </head>
+  <section>
+  <header>
+    <?xml version="1.0" ?><svg
+      height="512"
+      viewBox="0 0 512 512"
+      width="512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title />
+      <path
+        d="M221.09,64A157.09,157.09,0,1,0,378.18,221.09,157.1,157.1,0,0,0,221.09,64Z"
+        style="
+          fill: none;
+          stroke: #387169;
+          stroke-miterlimit: 10;
+          stroke-width: 32px;
+        "
+      />
+      <line
+        style="
+          fill: none;
+          stroke: #387169;
+          stroke-linecap: round;
+          stroke-miterlimit: 10;
+          stroke-width: 32px;
+        "
+        x1="338.29"
+        x2="448"
+        y1="338.29"
+        y2="448"
+      />
+    </svg> 
+    <div class ="container">
+    <form>
+      <input id="search" placeholder="Search movies..."  />
+    </form>
+  </header>
+  <body>
+    <h2>My Collection</h2>
+    <br>
+    <div class="meta">
+      <h4>Favorite movies</h4>
 
-        </div>
-    </header>
-    <body>
-        <h2>My Collection</h2>
-        <h4>Favorite movies</h4>
-        <div class="custom-select" style="width:200px;">
-            <select>
-              <option value="0">Movie Genre</option>
-              <option value="1">Hollywood Movies</option>
-              <option value="2">Drama Movies</option>
-              <option value="3">Action Movies</option>
-              <option value="4">Comedy Movies</option>
-            </select>
-        </div>
+      <div id="filter" >
+        <select>
+          <option value="0">Movie Genre</option>
+          <option value="1">Action</option>
+          <option value="2">Adventure</option>
+          <option value="3">Crime</option>
+          <option value="4">Comedy</option>
+          <option value="4">Drama</option>
+          <option value="4">Horror</option>
+        </select>
         <button id="btn" onclick="add()">Add New Movies</button>
-        <div id="movies">
-          <div class="movie">
-                <img src="https://render.fineartamerica.com/images/rendered/medium/canvas-print/15.5/20/mirror/break/images/artworkimages/medium/2/floral-lion-iii-balazs-solti-canvas-print.jpg" alt="">
-                <p>year</p>
-                <p></p>
-                <h2 class="title">title</h2>
-            </div>
-            
-            <div id="movies">
-                <div class="movie">
-                    <img src="https://render.fineartamerica.com/images/rendered/medium/canvas-print/15.5/20/mirror/break/images/artworkimages/medium/2/floral-lion-iii-balazs-solti-canvas-print.jpg" alt="">
-                    <p>year</p>
-                    <p></p>
-                    <h2 class="title">title</h2>
-                </div>
-        </div>
-        <main id="main">
+      </div>
+    </div>
+  </div>
+  </section>
 
-        </main>
-    </body>
-    <script src="index.js"></script>
+    <main id="main">
+      <div id="movies">
+        <!--<div class="movie">
+          <img src="https://image.tmdb.org/t/p/w500/${
+            movie.poster_path
+          }" alt="${movie.title}" />
+          <small>${movie.release_date.slice(
+            0,
+            4
+          )} - Horror/Thriller</small>              
+          <h5 class="title">${movie.title}</h5>
+          <em>${movie.vote_average}</em>
+          </div>-->
+      </div>
+    </main>
+  </body>
+  <script src="index.js"></script>
 </html>

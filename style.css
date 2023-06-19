@@ -1,48 +1,97 @@
-*{
-    box-sizing: border-box;
-}*
-
-
-body{
-    margin: 0;
-    background-color: #696969;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #253240;
+  font-family: sans-serif;
 }
 
-header{
-    padding: 1em;
-    display:flex;
-    background-color: #3B3B3B;
-    
-    
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1b2634;
+  padding-left: 16px;
 }
-.search{
-    padding: 10px;
-    border:none;
-    border-radius:  10px;
-    margin-left: 80%;
-    background-color: transparent;
-    
+header svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
-
-#btn{
-    background-color: green;
-    display: flex;
-    margin-left: 200px;
-    padding-right : 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    border-radius: 50px;
+header input {
+  background: none;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);
 }
-
-#movies{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
+.search {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 80%;
+  background-color: transparent;
+}
+.search :hover {
+  background-color: #253240;
 }
 
-.movie img{
-    width: 100%;
-      
-   }
+.search :active {
+  background-color: #253240;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+}
+.meta > div {
+  display: flex;
+}
+#btn {
+  background-color: green;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 50px;
+}
+
+#movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px;
+}
+.movie {
+  position: relative;
+}
+.movie h5 {
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+}
+.movie small {
+  display: inline-block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4px;
+}
+.movie em {
+  font-style: normal;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 14px;
+  color: white;
+  background: green;
+  border-radius: 50px;
+  padding: 4px;
+}
+h2 {
+  color: white;
+}
